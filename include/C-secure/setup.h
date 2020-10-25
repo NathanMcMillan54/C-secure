@@ -6,7 +6,10 @@
 #include "server.h"
 
 void setup() {
-    printf("Setting up...");
+    printf("Setting up...\n");
+    printf("Server\n");
+    server();
+    client();
 }
 
 #endif //C_SECURE_SETUP_H

@@ -25,3 +25,15 @@ Output:
 ```commandline
 this is a message from c secure
 ```
+
+## Setup
+To compile C-Secure, run:
+```commandline
+make all
+make executable
+```
+
+After compiling C-Secure, start the app by running:
+```commandline
+./main.exe
+```
