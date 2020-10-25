@@ -1,20 +1,30 @@
 #include <stdio.h>
+#include <unistd.h>
 
-#include "include/C-secure/setup.h"
+#include "include/setup.h"
+#include "include/bot.h"
 
 void setup_app() {
     printf("Setting up C-secure chat app...\n");
     setup();
 }
 
-int start_app() {
+void deletet_messages() {
+    const char *CLEAR_SCREEN_ANSI = "\e[1;1H\e[2J";
+    write(STDOUT_FILENO, CLEAR_SCREEN_ANSI, 12);
+}
+
+_Noreturn int start_app() {
+    int delete_message_sleep = 5;
     char message[1000];
+    for (;;) {
+        printf("Enter message: ");
+        scanf("%s[^\t\n]", message);
 
-    printf("Enter message: ");
-    scanf("%[^\t\n]", message);
-
-    printf("%s \n", message);
-    return 0;
+        printf("%s \n", message);
+        sleep(delete_message_sleep);
+        deletet_messages();
+    }
 }
 
 int main() {
