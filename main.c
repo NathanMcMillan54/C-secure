@@ -4,6 +4,7 @@
 
 void setup_app() {
     printf("Setting up C-secure chat app...\n");
+    setup();
 }
 
 int main() {

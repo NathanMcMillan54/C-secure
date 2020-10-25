@@ -1,8 +1,12 @@
-#ifdef _SETUP_H
-#define _SETUP_H
+#ifndef C_SECURE_SETUP_H
+#define C_SECURE_SETUP_H
+
+#include <stdio.h>
+
+#include "server.h"
 
 void setup() {
-
+    printf("Setting up...");
 }
 
-#endif /* _SETUP_H */
+#endif //C_SECURE_SETUP_H
