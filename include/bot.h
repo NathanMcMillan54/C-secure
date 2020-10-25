@@ -3,8 +3,8 @@
 
 #include <stdio.h>
 
-int system(char argument[1000]) {
-    printf("SYSTEM: %s", argument);
+int bot(char argument[1000]) {
+    printf("\nBOT: %s \n", argument);
     return 0;
 }
 

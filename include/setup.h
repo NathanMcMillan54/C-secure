@@ -8,8 +8,8 @@
 void setup() {
     printf("Setting up...\n");
     printf("Server\n");
-    server();
-    client();
+    start_server();
+    connect_client();
 }
 
 #endif //C_SECURE_SETUP_H

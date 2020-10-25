@@ -1,15 +1,16 @@
 #ifndef C_SECURE_SERVER_H
 #define C_SECURE_SERVER_H
 
-#include <stdio.h>
+#include "../server/client.c"
+#include "../server/server.c"
 
 
-void server() {
-    printf("Starting server...\n");
+void start_server() {
+    server();
 }
 
-void client() {
-    printf("Connecting client...\n");
+void connect_client() {
+    client();
 }
 
 #endif //C_SECURE_SERVER_H
