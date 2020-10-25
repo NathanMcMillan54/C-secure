@@ -1,6 +1,6 @@
 #include <stdio.h>
 
 int client() {
-    printf("Connecting client...\n");
+    printf("Connecting client to server... \n");
     return 0;
 }
