@@ -1,6 +1,9 @@
-.idea/
-cmake-build-debug
-
-*.exe
+# Ignored file formats
 *.o
-CMakeLists.txt
+
+# Ignored files
+Cargo.lock
+
+# Ignored directories
+.idea/
+target/
