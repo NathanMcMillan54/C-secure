@@ -26,14 +26,16 @@ Output:
 this is a message from c secure
 ```
 
-## Setup
-To compile C-Secure, run:
+## Build
 ```commandline
-make all
-make executable
+cargo build
 ```
 
-After compiling C-Secure, start the app by running:
+## Run
 ```commandline
-./main.exe
+cargo run $arg
 ```
+
+Run with arguments ``cmd`` for command line or ``web`` for web app.
+
+#

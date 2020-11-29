@@ -1,5 +1,5 @@
 # Ignored file formats
-*.o
+*.a
 
 # Ignored files
 Cargo.lock
@@ -7,3 +7,4 @@ Cargo.lock
 # Ignored directories
 .idea/
 target/
+user/
