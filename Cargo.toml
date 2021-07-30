@@ -1,12 +1,1 @@
-[package]
-name = "c-secure"
-version = "0.1.0"
-edition = "2018"
-authors = ["Nathan McMillan <nathanmcmillan54@gmail.com"]
-
-[[bin]]
-name = "c-secure"
-edition = "2018"
-path = "src/main.rs"
-
-[dependencies]
+[workspace]
